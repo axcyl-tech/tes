@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HanKo - Catalog</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All Product - HanKo</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 
-  <body>
-    <div class="container text-center my-5">
-      <h1 class="mb-4">HanKo Catalog</h1>
+  <style>
+    .product-card {
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
 
-      <div class="row justify-content-center">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="assets/jordan1.jpg" class="card-img-top" alt="HanKo" />
-            <div class="card-body">
-              <h5 class="card-title">HanKo</h5>
-              <p class="card-text">Kerajinan Gantungan Kunci</p>
-              <a href="detail.html" class="btn btn-primary">View Detail</a>
-            </div>
-          </div>
+<div class="container text-center my-5">
+  <h1 data-aos="fade-down">All Product</h1>
+
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-4" data-aos="fade-up">
+      <div class="card product-card">
+        <img src="assets/product1.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>HanKo</h5>
+          <p>Gantungan Kunci Handmade</p>
+          <a href="detail.html" class="btn btn-primary">
+            View Detail <i class="uil uil-arrow-up-right"></i>
+          </a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+
+<footer class="bg-dark text-white py-4">
+  <div class="container d-flex justify-content-between">
+    <strong>HanKo</strong>
+    <div class="d-flex gap-3">
+      <a href="https://www.instagram.com/hanko.official?igsh=eTE0bWRvZzNjbnR5" class="text-white">Instagram</a>
+      <a href="https://www.tiktok.com/@hanko.official?_r=1&_t=ZS-93NzWbIKabR" class="text-white">Tiktok</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000 });</script>
+</body>
 </html>
